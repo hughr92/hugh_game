@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rickity Ship</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" />
+</head>
+
+<body>
+<!--	 Testing the git command line tool-->
+    <div id="container">
+
+        <div class="rule rule_bot"><h2>Don't hit the bottom</h2></div>
+        <div class="rule rule_top"><h2>Don't hit the Top</h2></div>
+        <div class="rule rule_pole"><h2>Dodge the rocks!<h2></div>
+
+        <div id="planet"></div>
+        <div id="orbit">
+            <div id="satellite-small"></div>
+        </div>
+        <!-- <h2 id="lives">3</h2> -->
+        <div id="ship">
+            <!-- shield -->
+            <div class="rule rule_lives"><h2>You have 3 shields</h2></div>
+            <div id="shield"></div>
+            <!-- characters -->
+            <!-- <h2 id="rick-talk" class="character">Show me what you got</h2> -->
+            <!-- <h2 id="morty-talk" class="character">oh jeeze Rick</h2> -->
+            <!-- particle effects -->
+            <div class="slip-stream"></div>
+        </div>
+
+        <div id="pole_1" class="pole">
+            <!-- <div class="rule rule_pole"><h2>Poles hurt ships too<h2></div> -->
+        </div>
+        <div id="pole_2" class="pole"></div>
+
+        <div id="coin" class="coin"></div>
+
+        <div id="dmg" class="dmg">
+            <img class="rock" src="images/tiny-rock.png" alt="">
+            <img class="flame" src="images/flame/flame-1-01.png" alt="">
+        </div>
+
+        <div id="head" class="head"></div>
+        <!-- <h2 id="head-talk">Show me what you got</h2> -->
+    </div>
+
+    <div id="score_div">
+        <div class="score-inner score-container"> 
+            <img src="images/Schmeckles.png" alt=""> 
+            <div class="tag">
+                <p><span id="score">0</span></p>
+            </div>
+        </div>
+        <div class="speed-inner speed-container">
+            <p>Speed: <!-- <span class="speed">10</span> --></p>
+        </div>
+        <div class="speed-inner gage">
+            <img src="images/speed/speed-1-01.png" alt="">
+        </div>
+     </div>
+
+     <div id="level"><h2>Level 1</h2></div>
+     <div id="level-flash"><h2></h2></div>
+     <div id="max-level"><h3></h3></div>
+     <div id="max-level-flash"><h3></h3></div>
+    
+    <div id="restart-container">
+        <div id="restart-inner">
+            <h2>Try Again</h2>
+            <img id="end-image" src="images/end-screen-1.png" alt="">
+            <div class="final-speed r-element">
+                <p>Top Speed: <span id="final-speed" class="speed">10</span></p>
+            </div>
+            <div class="final-score r-element">
+                <p>Schmeckles: <span class="total-score">0</span></p>
+            </div>
+            <button id="restart_btn">Restart</button>
+        </div>
+    </div>
+
+    <div id="win-container">
+        <div id="win-inner">
+            <h2>You win</h2>
+            <img id="end-image" src="images/end-screen-1.png" alt="">
+            <div class="final-speed r-element">
+                <p>Top Speed: <span id="final-speed" class="speed">10</span></p>
+            </div>
+            <div class="final-score r-element">
+                <p>Schmeckles: <span class="total-score">0</span></p>
+            </div>
+            <button id="win_btn">Restart</button>
+        </div>
+    </div>
+
+    <div id="portal"></div>
+
+    <audio id="myAudio" autoplay="true" controls hidden loop>
+        <source src="audio/background-1.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="lives">
+        <h2>3</h2>
+    </div>
+    <!-- add a volume and sound bar at the top with js -->
+
+    <!-- <script src="script/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+
+
+</body>
+
+</html>
