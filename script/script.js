@@ -476,6 +476,18 @@ $( document ).ready(function() {
                 ship_audio.pause();
             }
         });
+        
+        
+        $(document).on('tap', function (e) {
+            go_up = setInterval(up, 50);
+            $('.slip-stream').css('opacity', '1').fadeIn(500);
+            // INSERT AUDIO HERE
+            ship_audio.setAttribute('src', 'audio/rocket-sfx-3.wav');
+            ship_audio.play();
+
+        });
+
+
 
 
         function go_down() {
